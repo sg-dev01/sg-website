@@ -355,17 +355,18 @@
       <p class="lower-label">Stay updated</p>
       <h2 class="lower-heading">New releases, first.</h2>
       <p class="lower-body" style="color:rgb(141,141,141);">No noise. Just new apps and what's coming next.</p>
+      
       <form
         method="post"
         action="https://app.loops.so/api/newsletter-form/cmofvs4k90nsk0i2vz4l8bpnv"
         class="sub-form" onsubmit="handleSubscribe(event)"
-       >
         <div class="sub-row">
           <input type="email" name="email" class="sub-input" id="email-input" placeholder="your@email.com" required="">
           <input type="hidden" name="userGroup" value="Website signups">
           <input type="hidden" name="mailingLists" value="cmog1mkh6at3i0ixjciryhn7m">
           <button type="submit" class="sub-btn">Subscribe</button>
         </div>
+      >
         <p class="sub-note" style="font-size:13px;">No spam. Unsubscribe anytime.</p>
         <p class="sub-success" id="form-success">you're in. sounds good.</p>
       </form>
@@ -412,11 +413,11 @@
     }
 
     // Tweaks protocol
-    window.addEventListener('message', (e) => {
-      if (e.data?.type === '__activate_edit_mode') document.getElementById('tweaks-panel').style.display = 'flex';
-      if (e.data?.type === '__deactivate_edit_mode') document.getElementById('tweaks-panel').style.display = 'none';
-    });
-    window.parent.postMessage({ type: '__edit_mode_available' }, '*');
+    // window.addEventListener('message', (e) => {
+    //   if (e.data?.type === '__activate_edit_mode') document.getElementById('tweaks-panel').style.display = 'flex';
+    //   if (e.data?.type === '__deactivate_edit_mode') document.getElementById('tweaks-panel').style.display = 'none';
+    // });
+    // window.parent.postMessage({ type: '__edit_mode_available' }, '*');
   </script>
 
 </body></html>
